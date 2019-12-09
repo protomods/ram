@@ -1,0 +1,172 @@
+/*!
+ * jQuery CLI
+ * Simulating a command line interface with jQuery
+ *
+ * @version : 1.0.0
+ * @author : Paulo Nunes (http://syndicatefx.com)
+ * @plugin_demo : http://jimmy.surge.sh/cli
+ * @license: MIT
+ */
+@import url(https://fonts.googleapis.com/css?family=Inconsolata:400,700);
+
+::selection{
+  background: #eee
+}
+::-webkit-selection{
+  background: #eee
+}
+::-moz-selection{
+  background: #eee
+}
+
+h2{
+  font-size: 1em;
+  font-weight: 400;
+}
+p{
+  margin-bottom:2em;
+}
+abbr{
+  cursor: help;
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+li{
+  margin:1em 0 0;
+}
+span{
+  display: block;
+  color:#999;
+  line-height:1;
+}
+
+kbd{
+  font-family: 'Inconsolata', monospace;
+  border:1px solid #999;
+  text-transform: uppercase;
+  padding:0 .2em;
+}
+input[type="text"]{
+
+  border: none;
+  font-family: inherit;
+  background: #fff;
+  padding:0 .5em;
+}
+input[type="text"]:focus{
+  background: #fff;
+  color: #000;
+  outline:none;
+}
+.command{
+  display: block;
+  color: #181818;
+  font-weight: 700;
+  margin: 2em 0;
+}
+
+
+/*.downloadpage section{
+  display: none;
+}*/
+.open{
+  display: block;
+}
+.downloadpage{
+	display:none;
+}
+header .header-content .header-content-inner .downloadpage p,#desc p{
+	max-width:100% !important;
+	text-align:left;
+	color:#fff !important;
+	width:100% !important;
+}
+#desc{
+	padding:15px;
+	background:#fff;
+}
+#desc,#desc p{
+	text-align:left;
+	color:#000 !important;
+}
+#desc iframe{
+	display:block;
+	margin:0 auto;
+}
+.downloadpage{
+    max-height: 600px;
+	height:500px;
+    overflow-x: hidden;
+    background: #000;
+    overflow-y: scroll;	
+}
+.downloadpage section{
+	padding-top:20px;
+	padding-left:20px;
+	padding-right:20px;
+}
+.downloadpage section span{
+	display:inline;
+}
+#innerInnerLoadingBar {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    height: 100%;
+    /*background-color: rgba(0,255,255,0.8);*/
+	background-color:#fff;
+}
+#innerloadingBar {
+    position: relative;
+    width: 100%;
+    height: 1.5em;
+    background-color: rgba(0,0,0,0.4);
+    border: 1px solid white;
+    display: none;
+    opacity: 0;
+}
+.animating {
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    transition: all 0.4s;
+}
+.download h1{
+	margin-top:0px;
+}
+.download input[type="submit"], .download input[type="input"] {
+    outline: 0;
+    border: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    padding: 12px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 1em;
+    text-decoration: none;
+    border: 2px solid currentColor;
+    -webkit-transition: 0.3s all;
+    -moz-transition: 0.3s all;
+    -ms-transition: 0.3s all;
+    transition: 0.3s all;
+}
+.download #desc{
+	display:none;
+}
+header .header-content.download .header-content-inner h1{
+	margin-top:0px;
+}
+@media screen and (max-width: 768px) {
+	#desc iframe{
+		width:100%;
+	}
+}
